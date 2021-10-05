@@ -90,3 +90,11 @@ body {
 .button i {
   margin-right: 8px;
 }
+
+.container {
+  margin-left: 30px;
+}
+
+.main-movie .container {
+  width: 70%;
+}
