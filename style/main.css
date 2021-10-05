@@ -16,6 +16,7 @@
 body {
   background: var(--black);
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
 }
 
 .container .menu-logo img {
@@ -45,4 +46,24 @@ body {
 
 .menu-nav a:hover {
   color: var(--white);
+}
+
+/* main movie */
+
+.main-movie {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .8)), url('../img/mrRobot.jpg');
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .description {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 40px;
 }
