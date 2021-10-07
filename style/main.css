@@ -98,3 +98,37 @@ body {
 .main-movie .container {
   width: 70%;
 }
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: none;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  transition: transform .4s;
+}
+
+.row-poster:hover {
+  transform: scale(1.08);
+}
+
+.row-poster-large {
+  max-height: 250px;
+}
+
+.row-poter-large:hover {
+  transform: scale(1.09);
+}
