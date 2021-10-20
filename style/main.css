@@ -28,13 +28,22 @@ body {
 }
 
 .logo-container {
-  max-width: 95%;
+  position: fixed;
+  top: 0;
+  width: 100%;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1000;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.logo-container-black {
+  background-color: #111;
 }
 
 .menu-nav ul {
@@ -111,6 +120,18 @@ body {
   height: auto;
 } */
 
+h2 {
+  margin: 25px;
+}
+
+.wacthed img {
+  filter: grayscale(1);
+}
+
+.wacthed img:hover {
+  filter: grayscale(0)
+}
+
 .row-poster {
   width: 100%;
   object-fit: contain;
@@ -130,6 +151,10 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  header .logo-container {
+    position: initial;
+  }
+
   header .container {
     display: flex;
     flex-direction: column;

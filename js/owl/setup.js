@@ -14,3 +14,13 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+const logoContainer = document.querySelector('.logo-container')
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 100) {
+        logoContainer.classList.add('logo-container-black')
+    } else {
+        logoContainer.classList.remove('logo-container-black')
+    }
+})
