@@ -115,10 +115,7 @@ body {
   margin-right: 8px;
 }
 
-/* .main-movie .container {
-  width: 90%;
-  height: auto;
-} */
+/* Movies List */
 
 h2 {
   margin: 25px;
@@ -134,6 +131,7 @@ h2 {
 
 .row-poster {
   width: 100%;
+  cursor: pointer;
   object-fit: contain;
   transition: transform .4s;
 }
@@ -143,7 +141,7 @@ h2 {
 }
 
 .row-poster-large {
-  max-height: 250px;
+  max-height: 350px;
 }
 
 .row-poster-large:hover {
