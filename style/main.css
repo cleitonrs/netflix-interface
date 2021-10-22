@@ -15,7 +15,7 @@
 
 body {
   background: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--white);
 }
 
@@ -92,6 +92,7 @@ body {
 }
 
 .buttons {
+  font-family: 'Roboto', sans-serif;
   margin: 20px 0;
 }
 
