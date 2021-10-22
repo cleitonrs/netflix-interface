@@ -43,7 +43,7 @@ body {
 }
 
 .logo-container-black {
-  background-color: #111;
+  background-color: var(--black);
 }
 
 .menu-nav ul {
@@ -55,10 +55,12 @@ body {
   display: block;
   padding: 10px;
   color: var(--grey);
+  transition: .3s ease-in;
 }
 
 .menu-nav a:hover {
   color: var(--white);
+  border-bottom: 1px solid var(--red);
 }
 
 /* main movie */
@@ -127,6 +129,13 @@ h2 {
 
 .wacthed img:hover {
   filter: grayscale(0)
+}
+
+.trendingNow img {
+  box-shadow: 0 0 10px var(--red),
+              0 0 30px var(--red),
+              0 0 50px var(--red),
+              0 0 100px var(--red);
 }
 
 .row-poster {
