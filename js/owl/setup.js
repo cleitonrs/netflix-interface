@@ -34,9 +34,11 @@ const modal_container = document.getElementById('modal_container')
 const modal_container2 = document.getElementById('modal_container2')
 const closeTrailer = document.getElementById('closeTrailer')
 const close = document.getElementById('close')
+const iframe = document.getElementsByTagName('iframe')[0]
 
 openTrailer.addEventListener('click', () => {
     modal_container2.classList.add('show')
+
 })
 
 open.addEventListener('click', () => {
@@ -45,6 +47,8 @@ open.addEventListener('click', () => {
 
 closeTrailer.addEventListener('click', () => {
     modal_container2.classList.remove('show')
+    iframe.setAttribute('src', '')
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/8qZYW_1hj2g')
 })
 
 close.addEventListener('click', () => {
