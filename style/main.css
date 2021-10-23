@@ -159,6 +159,8 @@ h2 {
   transform: scale(1.09);
 }
 
+/* Modal */
+
 .modal-container {
   background-color: rgba(0, 0, 0, .3);
   color: var(--black);
@@ -222,6 +224,10 @@ h2 {
     flex-direction: column;
   }
 
+  .modal {
+    padding: 30px 0;
+  }
+
   button {
     margin-top: 5px;
   }
@@ -231,10 +237,22 @@ h2 {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 414px){
+  iframe {
+    width: 414px;
+    height: 233px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   header .menu-nav ul {
     flex-direction: column;
     text-align: center;
+  }
+
+  iframe {
+    width: 360px;
+    height: 202px;
   }
 
   .buttons {
@@ -247,6 +265,11 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+
   .buttons {
     margin: 100px 0 0 0;
   }

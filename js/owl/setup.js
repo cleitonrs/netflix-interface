@@ -28,12 +28,23 @@ window.addEventListener('scroll', () => {
 })
 
 // Modal script
+const openTrailer = document.getElementById('openTrailer')
 const open = document.getElementById('open')
 const modal_container = document.getElementById('modal_container')
+const modal_container2 = document.getElementById('modal_container2')
+const closeTrailer = document.getElementById('closeTrailer')
 const close = document.getElementById('close')
+
+openTrailer.addEventListener('click', () => {
+    modal_container2.classList.add('show')
+})
 
 open.addEventListener('click', () => {
     modal_container.classList.add('show')
+})
+
+closeTrailer.addEventListener('click', () => {
+    modal_container2.classList.remove('show')
 })
 
 close.addEventListener('click', () => {
