@@ -159,6 +159,59 @@ h2 {
   transform: scale(1.09);
 }
 
+.modal-container {
+  background-color: rgba(0, 0, 0, .3);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity .3s ease;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(250, 250, 250, 0.2);
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 10px;
+}
+
+.modal p {
+  opacity: .7;
+  font-size: 14px;
+}
+
+.modal button {
+  background-color: var(--red);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 23px;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 700px) {
   header .logo-container {
     position: initial;
