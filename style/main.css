@@ -172,6 +172,10 @@ h2 {
   button {
     margin-top: 5px;
   }
+
+  .row-poster-large {
+    max-height: 250px;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -182,6 +186,10 @@ h2 {
 
   .buttons {
     margin: 50px 0 0 0;
+  }
+
+  .row-poster-large {
+    max-height: 150px;
   }
 }
 
